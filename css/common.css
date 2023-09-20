@@ -1,0 +1,138 @@
+.wrapper {
+  max-width: 1360px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+#header {
+  height: 80px;
+  position: fixed;
+  background-color: #fff;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.site-title {
+  width: 180px;
+  height: 25px;
+}
+.site-title a {
+  cursor: pointer;
+}
+.site-title a img {
+  width: 100%;
+  height: 100%;
+}
+
+#global-nav {
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  transition: all 0.5s;
+  width: 300px;
+}
+#global-nav.active {
+  left: 0;
+}
+#global-nav .nav-menu {
+  padding: 36px 50px;
+  margin: 0;
+}
+#global-nav .nav-menu li {
+  margin-bottom: 14px;
+}
+#global-nav .nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+#global-nav .nav-menu li a:hover {
+  opacity: 0.7;
+}
+
+.toggle-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 20;
+  cursor: pointer;
+}
+.toggle-btn span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #333;
+  transition: all 0.5s;
+}
+.toggle-btn span:nth-child(1) {
+  top: 10px;
+}
+.toggle-btn span:nth-child(2) {
+  top: 20px;
+}
+
+.open span {
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.open span:nth-child(1) {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(6px) rotate(-45deg);
+}
+.open span:nth-child(2) {
+  -webkit-transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
+}
+
+#mask {
+  display: none;
+}
+#mask.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#footer {
+  margin: 60px auto 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+@media (max-width: 900px) {
+  #footer {
+    display: block;
+    margin: 110px 0 20px;
+  }
+}
+#footer .footer-nav {
+  display: flex;
+}
+#footer .footer-nav li {
+  font-size: 12px;
+  margin-right: 12px;
+}
+#footer .copyright {
+  font-size: 10px;
+  padding-left: 5px;
+}
+@media (max-width: 900px) {
+  #footer .copyright {
+    padding-top: 10px;
+  }
+}/*# sourceMappingURL=common.css.map */
