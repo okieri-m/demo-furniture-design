@@ -28,6 +28,11 @@
 .products-text {
   width: 42%;
 }
+@media (max-width: 900px) {
+  .products-text {
+    width: 100%;
+  }
+}
 .products-text p {
   font-size: 14px;
   line-height: 1.7;
