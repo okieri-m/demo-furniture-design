@@ -79,7 +79,9 @@
 iframe {
   filter: grayscale(100%);
   margin-bottom: 180px;
-  width: 100%;
+  width: 600px;
+  position: relative;
+  z-index: -1;
 }
 @media (max-width: 900px) {
   iframe {
