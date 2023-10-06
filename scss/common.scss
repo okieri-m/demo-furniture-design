@@ -1,11 +1,20 @@
 @charset 'utf-8';
 @import './mixin';
+body{
+    position: relative;
+    min-height: 100vh;
+}
 // ナビメニュー
-.wrapper{max-width: 1360px;margin: auto;padding: 0 40px;}
+.wrapper{
+    width: 100%;max-width: 1360px;margin: 0 auto;padding: 0 40px;box-sizing: border-box;
+    
+}
 #header{
     height: 80px;
     position: fixed;
     background-color: #fff;
+    box-sizing: border-box;
+    top: 0;
     right: 0;
     left: 0;
     @include flexSpaceBetween;
@@ -98,17 +107,20 @@ span{
 
 // フッターメニュー
 #footer{
-    margin: 60px auto 14px;
     @include flexSpaceBetween;
+    position: absolute;
+    bottom: 14px;
+    right: 0;
+    left: 0;
     @include sp{
        display: block;
-       margin: 110px 0 20px;
+       bottom: 20px;
     }
     .footer-nav{
         display: flex;
         li{
             font-size: 12px;
-            margin-right: 12px;
+            margin-right: 32px;
         }
     }
     .copyright{
@@ -118,4 +130,10 @@ span{
             padding-top: 10px;
          }
     }
+}
+
+// コンテンツ
+.content{
+    padding-bottom: 160px;
+    box-sizing: border-box;
 }

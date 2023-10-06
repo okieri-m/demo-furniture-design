@@ -1,9 +1,7 @@
 @charset "uft-8";
 @import './mixin';
 
-// .products-wrapper{
-//     padding: 0 40px;
-// }
+
 .products-items{
     @include flexSpaceBetween;
     flex-wrap: wrap;
@@ -42,4 +40,22 @@
     @include sp{
         margin-top: 46px;
     }
+}
+
+// プロダクトページよう
+.products-titleh2{
+    margin: 0;
+    padding: 80px 0 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.ptop-0{
+    padding-top: 0;
+}
+.pagenation-lists{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 22px;
+    font-size: 14px;
 }

@@ -1,0 +1,81 @@
+@charset 'utf-8';
+@import './mixin';
+
+// about
+.content{
+    padding-top: 124px;
+    padding-bottom: 0;
+    @include sp{
+        padding-bottom: 240px;
+     }
+}
+.content-title{
+    max-width: 600px;
+    margin: 0 0 36px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.content-text {
+    line-height: 2;
+    max-width: 600px;
+    margin: 0;
+    font-size: 14px;
+    &:last-child{
+        margin-top: 37px;
+    }
+}
+
+// company
+.company-details{
+    max-width: 600px;
+    margin-bottom: 44px;
+    box-sizing: inherit;
+    dl{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+        box-sizing: inherit;
+        @include sp{
+            display: block;
+         }
+        dt{
+            width: 30%;
+            padding: 20px 5px;
+            border-bottom: 1px solid #DCDBDB;
+            margin: 0;
+            @include sp{
+            width: 100%;
+            border-bottom: none;
+            padding: 20px 5px 10px;
+             }
+            &:last-of-type{
+                border-bottom: none;
+            }
+            box-sizing: inherit;
+        }
+        dd{
+            width: 70%;
+            padding: 25px 5px;
+            border-bottom: 1px solid #DCDBDB;
+            margin: 0;
+            line-height: 1.8;
+            @include sp{
+            width: 100%;
+            padding: 10px 5px 25px;
+             }
+            &:last-of-type{
+                border-bottom: none;
+            }
+            box-sizing: inherit;
+        }
+    }
+}
+iframe{
+    filter: grayscale(100%);
+    margin-bottom: 180px;
+    width: 100%;
+    @include sp{
+        width: 100%;
+        margin-bottom: 140px;
+     }
+}
